@@ -448,3 +448,122 @@ button, input {
   bottom: 2px;
   background: var(--accent3);
 }
+
+footer {
+  margin-top: 160px;
+  background-image: url(./images/wave.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 526px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer h3 {
+  color: #ADADAD;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  column-gap: 30px;
+}
+
+.socials__item--accent {
+  border-radius: 50%;
+  background: var(--accent1);
+  height: 40px;
+}
+
+.email {
+  font-weight: bold;
+  font-size: 32px;
+  color: var(--primary);
+}
+
+.bottom-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 30px;
+}
+
+.bottom-nav ul {
+  display: grid;
+  row-gap: 16px;
+  align-content: start;
+}
+
+.form_row1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form_row2 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 30px;
+}
+
+.form input, .form textarea {
+  border-radius: 16px;
+  height: 48px;
+  padding-left: 16px;
+  background-color:  rgba(191, 194, 194, .24);
+  font-size: 18px;
+}
+
+.form input::placeholder {
+  color: inherit;
+}
+
+.form__username {
+  background-image:url(./images/icon_user.svg) ;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form__email {
+  background-image:url(./images/icon_user.svg) ;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.form textarea {
+  border: 1px solid rgba(108, 92, 231, .24);
+  background-color:  rgba(191, 194, 194, .24);
+  padding-top: 16px;
+  resize: none;
+  background-image:url(./images/icon_edit.svg) ;
+  background-repeat: no-repeat;
+  background-position: right 4px;
+  height: 100%;
+}
+
+.form textarea::placeholder {
+  color: var(--primary);
+}
